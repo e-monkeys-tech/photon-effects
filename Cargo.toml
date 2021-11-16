@@ -21,4 +21,3 @@ required-features = []
 image = { version = "0.23.12", default-features = false, features = ["gif", "jpeg", "ico", "png", "pnm", "tga", "tiff", "webp", "bmp", "hdr", "dxt", "dds", "farbfeld"] }
 photon-rs = "0.3.1"
 time="0.2.23"
-walkdir = "2.3.2"

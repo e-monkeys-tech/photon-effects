@@ -66,6 +66,22 @@ pub fn horizontal_strips(image_path: &str, image_output_directory: &str, parse_f
   Ok(())
 }
 
+pub fn vertical_strips(image_path: &str, image_output_directory: &str, parse_filename: &str, num_strips: u8) -> Result<(), Box<dyn std::error::Error>> {
+  let mut img = photon::native::open_image(image_path)?;
+  photon::effects::vertical_strips(&mut img, num_strips);
+  photon::native::save_image(img, &format!(
+    "{}/{}_horizontal_strips.jpg", 
+    image_output_directory,
+    parse_filename
+  )[..]);
+  println!(
+      "Generate {}/{}_horizontal_strips.jpg image.",
+      image_output_directory,
+      parse_filename
+  );
+  Ok(())
+}
+
 pub fn inc_brightness(image_path: &str, image_output_directory: &str, parse_filename: &str,  brightness: u8) -> Result<(), Box<dyn std::error::Error>> {
   let mut img = photon::native::open_image(image_path)?;
   photon::effects::inc_brightness(&mut img, brightness);

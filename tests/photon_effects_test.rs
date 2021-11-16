@@ -20,49 +20,63 @@ mod tests {
       .expect("Couldn't create halftone image");
     }
 
-    /* #[test]
-    inc_brightness(image_path, image_output_directory, &parse_filename, 10)
-    .expect("Couldn't create inc_brightness image");
-    
     #[test]
-    vertical_strips(image_path, image_output_directory, &parse_filename, 5)
-    .expect("Couldn't create vertical_strips image");
+    fn test_inc_brightness() {
+      photon_effects::inc_brightness("src/assets/logo.png", "src/assets/out/", "logo_halftone.png", 10)
+      .expect("Couldn't create inc_brightness image");
+    }
 
     #[test]
-    horizontal_strips(image_path, image_output_directory, &parse_filename, 7)
-    .expect("Couldn't create horizontal_strips image");
+    fn test_vertical_strips() {
+      photon_effects::vertical_strips("src/assets/logo.png", "src/assets/out/", "logo_halftone.png", 5)
+      .expect("Couldn't create vertical_strips image");
+    }
 
     #[test]
-    tint(image_path, image_output_directory, &parse_filename, 10, 20, 15)
-    .expect("Couldn't create tint image");
+    fn test_horizontal_strips() {
+      photon_effects::horizontal_strips("src/assets/logo.png", "src/assets/out/", "logo_halftone.png", 7)
+      .expect("Couldn't create horizontal_strips image");
+    }
 
     #[test]
-    offset(image_path, image_output_directory, &parse_filename, 0, 30)
-    .expect("Couldn't create offset image");
+    fn test_tint() {
+      photon_effects::tint("src/assets/logo.png", "src/assets/out/", "logo_halftone.png", 10, 20, 15)
+      .expect("Couldn't create tint image");
+    }
 
     #[test]
-    offset_blue(image_path, image_output_directory, &parse_filename, 30)
-    .expect("Couldn't create offset_blue image");
+    fn test_offset() {
+      photon_effects::offset("src/assets/logo.png", "src/assets/out/", "logo_halftone.png", 0, 30)
+      .expect("Couldn't create offset image");
+    }
 
     #[test]
-    offset_red(image_path, image_output_directory, &parse_filename, 30)    
-    .expect("Couldn't create offset_red image");
+    fn test_offset_blue() {
+      photon_effects::offset_blue("src/assets/logo.png", "src/assets/out/", "logo_halftone.png", 30)
+      .expect("Couldn't create offset_blue image");
+    }
 
     #[test]
-    offset_green(image_path, image_output_directory, &parse_filename, 30)
-    .expect("Couldn't create offset_green image");
+    fn test_offset_red() {
+      photon_effects::offset_red("src/assets/logo.png", "src/assets/out/", "logo_halftone.png", 30)    
+      .expect("Couldn't create offset_red image");
+    }
 
     #[test]
-    multiple_offsets(image_path, image_output_directory, &parse_filename, 30, 0, 2)
-    .expect("Couldn't create multiple_offsets image");
+    fn test_offset_green() {
+      photon_effects::offset_green("src/assets/logo.png", "src/assets/out/", "logo_halftone.png",30)
+      .expect("Couldn't create offset_green image");
+    }
 
     #[test]
-    primary(image_path, image_output_directory, &parse_filename)
-    .expect("Couldn't create primary image"); */
+    fn test_multiple_offsets() {   
+      photon_effects::multiple_offsets("src/assets/logo.png", "src/assets/out/", "logo_halftone.png", 30, 0, 2)
+      .expect("Couldn't create multiple_offsets image");
+    }
 
     #[test]
-    fn it_works() {
-        let result = 2 + 2;
-        assert_eq!(result, 4);
+    fn test_primary() {   
+      photon_effects::primary("src/assets/logo.png", "src/assets/out/", "logo_halftone.png")
+      .expect("Couldn't create multiple_offsets image");
     }
 }
