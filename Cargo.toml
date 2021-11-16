@@ -1,0 +1,24 @@
+[package]
+name = "photon-effects"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "photon_effects"         # The name of the target.
+path = "src/photon_effects.rs"  # The source file of the target.
+test = true             # Is tested by default.
+doctest = true          # Documentation examples are tested by default.
+bench = true            # Is benchmarked by default.
+doc = true              # Is documented by default.
+plugin = false          # Used as a compiler plugin (deprecated).
+proc-macro = false      # Set to `true` for a proc-macro library.
+harness = true          # Use libtest harness.
+edition = "2021"        # The edition of the target.
+crate-type = ["lib"]    # The crate types to generate.
+required-features = []
+
+[dependencies]
+image = { version = "0.23.12", default-features = false, features = ["gif", "jpeg", "ico", "png", "pnm", "tga", "tiff", "webp", "bmp", "hdr", "dxt", "dds", "farbfeld"] }
+photon-rs = "0.3.1"
+time="0.2.23"
+walkdir = "2.3.2"
