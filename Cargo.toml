@@ -1,6 +1,6 @@
 [package]
 name = "photon-effects"
-version = "0.1.0"
+version = "1.0.0"
 edition = "2021"
 description = "Library extending photon to easily use effects functions"
 license = "MIT"

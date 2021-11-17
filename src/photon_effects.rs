@@ -7,8 +7,8 @@ extern crate time;
 /// ```no_run
 /// extern crate photon_effects;
 ///
-/// let input = "/tmp/logo.png"
-/// let output_dir = "/tmp/"
+/// let input = "/tmp/logo.png";
+/// let output_dir = "/tmp/";
 ///
 /// photon_effects::solarize(
 ///   input,
@@ -39,8 +39,8 @@ pub fn solarize(
 /// ```no_run
 /// extern crate photon_effects;
 ///
-/// let input = "/tmp/logo.png"
-/// let output_dir = "/tmp/"
+/// let input = "/tmp/logo.png";
+/// let output_dir = "/tmp/";
 ///
 /// photon_effects::colorize(
 ///   input,
@@ -71,8 +71,8 @@ pub fn colorize(
 /// ```no_run
 /// extern crate photon_effects;
 ///
-/// let input = "/tmp/logo.png"
-/// let output_dir = "/tmp/"
+/// let input = "/tmp/logo.png";
+/// let output_dir = "/tmp/";
 ///
 /// photon_effects::halftone(
 ///   input,
@@ -103,8 +103,8 @@ pub fn halftone(
 /// ```no_run
 /// extern crate photon_effects;
 ///
-/// let input = "/tmp/logo.png"
-/// let output_dir = "/tmp/"
+/// let input = "/tmp/logo.png";
+/// let output_dir = "/tmp/";
 ///
 /// photon_effects::horizontal_strips(
 ///   input,
@@ -140,8 +140,8 @@ pub fn horizontal_strips(
 /// ```no_run
 /// extern crate photon_effects;
 ///
-/// let input = "/tmp/logo.png"
-/// let output_dir = "/tmp/"
+/// let input = "/tmp/logo.png";
+/// let output_dir = "/tmp/";
 ///
 /// photon_effects::vertical_strips(
 ///   input,
@@ -177,8 +177,8 @@ pub fn vertical_strips(
 /// ```no_run
 /// extern crate photon_effects;
 ///
-/// let input = "/tmp/logo.png"
-/// let output_dir = "/tmp/"
+/// let input = "/tmp/logo.png";
+/// let output_dir = "/tmp/";
 ///
 /// photon_effects::inc_brightness(
 ///   input,
@@ -214,8 +214,8 @@ pub fn inc_brightness(
 /// ```no_run
 /// extern crate photon_effects;
 ///
-/// let input = "/tmp/logo.png"
-/// let output_dir = "/tmp/"
+/// let input = "/tmp/logo.png";
+/// let output_dir = "/tmp/";
 ///
 /// photon_effects::multiple_offsets(
 ///   input,
@@ -255,8 +255,8 @@ pub fn multiple_offsets(
 /// ```no_run
 /// extern crate photon_effects;
 ///
-/// let input = "/tmp/logo.png"
-/// let output_dir = "/tmp/"
+/// let input = "/tmp/logo.png";
+/// let output_dir = "/tmp/";
 ///
 /// photon_effects::offset(
 ///   input,
@@ -291,9 +291,8 @@ pub fn offset(
 /// ```no_run
 /// extern crate photon_effects;
 ///
-/// let input = "/tmp/logo.png"
-/// let output_dir = "/tmp/"
-/// let offset_amt =
+/// let input = "/tmp/logo.png";
+/// let output_dir = "/tmp/";
 ///
 /// photon_effects::offset_blue(
 ///   input,
@@ -329,9 +328,8 @@ pub fn offset_blue(
 /// ```no_run
 /// extern crate photon_effects;
 ///
-/// let input = "/tmp/logo.png"
-/// let output_dir = "/tmp/"
-/// let offset_amt =
+/// let input = "/tmp/logo.png";
+/// let output_dir = "/tmp/";
 ///
 /// photon_effects::offset_green(
 ///   input,
@@ -367,9 +365,8 @@ pub fn offset_green(
 /// ```no_run
 /// extern crate photon_effects;
 ///
-/// let input = "/tmp/logo.png"
-/// let output_dir = "/tmp/"
-/// let offset_amt =
+/// let input = "/tmp/logo.png";
+/// let output_dir = "/tmp/";
 ///
 /// photon_effects::offset_red(
 ///   input,
@@ -405,9 +402,8 @@ pub fn offset_red(
 /// ```no_run
 /// extern crate photon_effects;
 ///
-/// let input = "/tmp/logo.png"
-/// let output_dir = "/tmp/"
-/// let offset_amt =
+/// let input = "/tmp/logo.png";
+/// let output_dir = "/tmp/";
 ///
 /// photon_effects::primary(
 ///   input,
@@ -438,9 +434,8 @@ pub fn primary(
 /// ```no_run
 /// extern crate photon_effects;
 ///
-/// let input = "/tmp/logo.png"
-/// let output_dir = "/tmp/"
-/// let offset_amt =
+/// let input = "/tmp/logo.png";
+/// let output_dir = "/tmp/";
 ///
 /// photon_effects::tint(
 ///   input,
