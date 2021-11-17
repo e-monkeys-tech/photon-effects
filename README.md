@@ -1,5 +1,8 @@
 # photon-effects
 
+![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)
+![Continuous integration](https://github.com/actions-rs/cargo/workflows/Continuous%20integration/badge.svg)
+
 photon-effects is an extension of photon-rs to easily apply filter effects on image or image directory.
 
 ## Some examples 
